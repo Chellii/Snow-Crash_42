@@ -1,0 +1,7 @@
+after logging to this level, we explored the files visible for the user. we
+found the file /etc/passwd. This seemed like a hint to look there. There was
+a hash in the file. This hash was next to flag01. Using John the ripper we
+cracked the hash to get "abcdefg".
+
+echo 42hDRfypTqqnw > file
+john file
