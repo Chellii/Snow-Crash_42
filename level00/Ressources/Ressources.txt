@@ -1,0 +1,9 @@
+- find / -user flag00 -print 2>/dev/null
+print 2>/dev/null to not show the folder and files with permission denied
+- cat /usr/sbin/john
+you'll get : cdiiddwpgswtgt
+we used dcode.fr to decrypt cdiiddwpgswtgt with code cesar we got : nottoohardhere
+su flag00 => use nottoohardhere as password
+then launch getflag
+x24ti5gi3x0ol2eh4esiuxias
+
