@@ -1,0 +1,9 @@
+when logging to this level, we found a pcap file. after some research we found
+that is a capture of packets. we used wireshark, tshark, scapy. scapy allows
+for the analysis of packets.
+###
+p = rdpcap("/home/vagrant/level02.pcap")
+for i in range(95):
+  if hasattr(p[i], 'load'):
+    print(p[i].load)
+###
