@@ -1,0 +1,7 @@
+when we opened this level we got a message about mail. After investigation we
+found that there is a priviledged cron job that runs every 2 mins. this job
+loops over files in /opt/openarenaserver/ , executes them, then deletes them.
+We cannot get the output of commands because the privildged runner is not the
+user. so we just redirect the output to the /tmp/ folder. Thus getting the
+flag.
+echo `getflag` > /tmp/file
